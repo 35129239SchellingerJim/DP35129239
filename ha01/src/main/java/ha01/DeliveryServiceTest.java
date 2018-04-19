@@ -22,7 +22,10 @@ public class DeliveryServiceTest {
 		FastFoodService.setSubcontractor(DoenerLaden);
 		FastFoodService.deliver(42,"WilliAlle73");
 		
-	
+		// drei neue Lines + Klasse Steak House 
+		SteakHouse SteakHouse=new SteakHouse();
+		FastFoodService.setSubcontractor(SteakHouse);
+		FastFoodService.deliver(42,"WilliAlle73");
 	}
 
 }
